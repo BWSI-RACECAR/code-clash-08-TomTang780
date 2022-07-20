@@ -31,7 +31,7 @@ class Solution:
         # return: int
 
         # TODO: Write code below to return a double with the solution to the prompt
-        area = abs((1/2) * ((v2[0] - v1[0])(v3[1] - v1[1]) - (v3[0] - v1[0])(v2[1] - v1[1])))
+        area = int((1/2) * ((v2[0] - v1[0])(v3[1] - v1[1]) - (v3[0] - v1[0])(v2[1] - v1[1])))
         return area
         pass
 
