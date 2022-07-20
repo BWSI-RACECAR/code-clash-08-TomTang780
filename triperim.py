@@ -31,8 +31,14 @@ class Solution:
         # return: int
 
         # TODO: Write code below to return a double with the solution to the prompt
-        area = int((1/2) * ((v2[0] - v1[0])(v3[1] - v1[1]) - (v3[0] - v1[0])(v2[1] - v1[1])))
-        return area
+        d1 = ((v2[0] - v1[0])**2 + (v2[1] - v1[1])**2)
+        d1 = d1**(1/2)
+        d2 = ((v2[0] - v3[0])**2 + (v2[1] - v3[1])**2)
+        d2 = d2**(1/2)
+        d3 = ((v1[0] - v3[0])**2 + (v1[1] - v3[1])**2)
+        d3 = d3**(1/2)
+        peri = d1 + d2 + d3
+        return peri
         pass
 
 def main():
